@@ -19,3 +19,15 @@
   border-top: 1px solid #e4e8f3;
   padding: 10px 30px;
 }
+.content {
+  display: inline-block;
+  width: calc(95% / 3);
+  text-align: center;
+  margin: 0.5rem;
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

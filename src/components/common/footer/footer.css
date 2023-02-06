@@ -13,7 +13,7 @@ footer {
 }
 footer .container {
   display: grid;
-  grid-template-columns: 6fr 2fr 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
   grid-gap: 20px;
 }
 footer img {
@@ -55,4 +55,11 @@ footer ul li {
   footer .container {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.leaflet-container {
+  width: 300px;
+  height: 300px;
+  margin-bottom: auto;
+  display: flex;
 }

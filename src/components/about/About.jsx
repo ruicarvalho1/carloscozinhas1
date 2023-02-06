@@ -1,29 +1,47 @@
-import React from "react"
-import Back from "../common/Back"
-import Heading from "../common/Heading"
-import img from "../images/about.jpg"
-import "./about.css"
+import React from "react";
+import Back from "../common/Back";
+import Heading from "../common/Heading";
+import img from "../images/about.jpg";
+import image from "../../../src/components/images/about.jpeg";
+import "./about.css";
 
 const About = () => {
   return (
     <>
-      <section className='about'>
-        <Back name='About Us' title='About Us - Who We Are?' cover={img} />
-        <div className='container flex mtop'>
-          <div className='left row'>
-            <Heading title='Our Agency Story' subtitle='Check out our company story and work process' />
+      <section className="about">
+        <Back
+          name="Sobre nós"
+          title="Sobre nós - Quem nós somos?"
+          cover={img}
+        />
+        <div className="container flex mtop">
+          <div className="left row">
+            <Heading
+              title="Bem vindo"
+              subtitle="Venha ver sobre a nossa empresa"
+            />
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-            <button className='btn2'>More About Us</button>
+            <p>
+              Bem-vindo ao nosso site de cozinhas! Somos uma empresa
+              especializada em projetar e instalar cozinhas personalizadas para
+              nossos clientes.
+            </p>
+            <p>
+              Com mais de 10 anos de experiência no setor, entendemos que a
+              cozinha é o coração da casa e por isso oferecemos um serviço
+              completo, desde o projeto até a instalação final. Trabalhamos com
+              os melhores fornecedores e fabricantes de cozinhas para garantir
+              que nossos clientes tenham acesso às últimas tendências e
+              tecnologias disponíveis no mercado.
+            </p>
           </div>
-          <div className='right row'>
-            <img src='./immio.jpg' alt='' />
+          <div className="right row">
+            <img src={image} alt="" />
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

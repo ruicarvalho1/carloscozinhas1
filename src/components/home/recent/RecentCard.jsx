@@ -1,39 +1,44 @@
-import React from "react"
-import { list } from "../../data/Data"
+import React from "react";
+
+import img2 from "../../images/principal2.jpeg";
+import img3 from "../../images/principal3.jpeg";
+import img4 from "../../images/principal4.jpeg";
 
 const RecentCard = () => {
   return (
     <>
-      <div className='content grid3 mtop'>
-        {list.map((val, index) => {
-          const { cover, category, location, name, price, type } = val
-          return (
-            <div className='box shadow' key={index}>
-              <div className='img'>
-                <img src={cover} alt='' />
-              </div>
-              <div className='text'>
-                <div className='category flex'>
-                  <span style={{ background: category === "For Sale" ? "#25b5791a" : "#ff98001a", color: category === "For Sale" ? "#25b579" : "#ff9800" }}>{category}</span>
-                  <i className='fa fa-heart'></i>
-                </div>
-                <h4>{name}</h4>
-                <p>
-                  <i className='fa fa-location-dot'></i> {location}
-                </p>
-              </div>
-              <div className='button flex'>
-                <div>
-                  <button className='btn2'>{price}</button> <label htmlFor=''>/sqft</label>
-                </div>
-                <span>{type}</span>
-              </div>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
+        <div className="content grid3 mtop">
+          <div className="box shadow">
+            <div className="img">
+              <img
+                alt=""
+                src={img2}
+                style={{ maxWidth: "100%", height: "auto" }}
+              />
             </div>
-          )
-        })}
+            <div className="text"></div>
+          </div>
+        </div>
+        <div className="content grid3 mtop">
+          <div className="box shadow">
+            <div className="img">
+              <img alt="" src={img3} />
+            </div>
+            <div className="text"></div>
+          </div>
+        </div>
+        <div className="content grid3 mtop">
+          <div className="box shadow">
+            <div className="img">
+              <img alt="" src={img4} />
+            </div>
+            <div className="text"></div>
+          </div>
+        </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default RecentCard
+export default RecentCard;

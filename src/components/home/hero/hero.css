@@ -2,12 +2,26 @@
   background-image: url("../../../../public/images/banner.png");
   background-repeat: no-repeat;
   background-position: center;
+
   background-size: cover;
+  color: grey;
   height: 90vh;
   width: 100%;
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+}
+.hero .box:hover {
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero i {
+  color: grey;
+  margin-right: 3px;
 }
 .hero .container {
-  padding-top: 15%;
+  padding-top: 2%;
 }
 .hero h1 {
   color: #fff;
@@ -62,4 +76,11 @@ form h4 {
   form input {
     width: 100%;
   }
+}
+
+.carousel-control-next {
+  height: 700px;
+}
+.carousel-control-prev {
+  height: 700px;
 }
